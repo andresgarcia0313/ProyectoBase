@@ -70,4 +70,4 @@ Este proyecto está bajo la Licencia MIT - consulta el archivo `LICENSE` para m�
 
 ## Contacto
 
-Para preguntas o comentarios, por favor contacta a [Tu Nombre/Correo Electrónico del Equipo].
+Para preguntas o comentarios, por favor contacta a andresgarcia0313@gmail.com
