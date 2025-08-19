@@ -25,7 +25,7 @@ Antes de empezar, asegúrate de tener instalado lo siguiente:
 
 1.  Clona el repositorio:
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
+    git clone https://github.com/andresgarcia0313/ProyectoBase
     cd ProyectoBase
     ```
 2.  Instala las dependencias del backend:
