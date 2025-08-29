@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:17-alpine
+    env_file:
+      - ./.env
+    ports:
+      - target: 5432
+        published: 5432
+        protocol: tcp
+        mode: ingress
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: any
+        delay: 5s
+        max_attempts: 3
+        window: 2m
+      update_config:
+        parallelism: 1
+        order: start-first
+        failure_action: rollback
+volumes:
+  postgres_data:
+    driver: local
+
+#docker stack deploy -c stack.yml postgresql
