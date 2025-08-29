@@ -10,6 +10,10 @@ app.use(express.json());
 let users = [];
 let nextId = 1;
 
+app.get('/', (req, res) => {
+  res.send("Bievenidos");
+});
+
 // GET all users
 app.get('/users', (req, res) => {
   res.json(users);
